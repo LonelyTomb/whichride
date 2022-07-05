@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import AppHeader from './components/AppHeader';
+import Welcome from './components/landing/WelcomeSection'
+import About from './components/landing/AboutSection'
+import Contact from './components/landing/ContactSection'
+import Info from './components/landing/InfoSection'
+import AppFooter from './components/AppFooter'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App hd:container mx-auto">
+			<AppHeader/>
+			<Welcome/>
+			<About/>
+			<Info/>
+			<Contact/>
+			<AppFooter/>
+		</div>
+	);
 }
 
 export default App;
