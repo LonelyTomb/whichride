@@ -15,7 +15,7 @@ const About = () => {
 		</div>
 		<div className="flex flex-row items-center">
 			<div className="hidden lg:block w-1/2">
-				<img src={iPhone} alt="whichride preview" className={'object-center object-contain ml-auto'}/>
+				<img src={iPhone} alt="whichride preview" className={'object-center object-contain ml-auto flip-in-ver-left animation'}/>
 			</div>
 			<div className="lg:w-1/2 flex flex-col justify-end gap-10">
 				<div className={'flex flex-col lg:flex-row items-center gap-8'}>
